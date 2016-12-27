@@ -1,3 +1,91 @@
-.oxmod-headbar{
-/* CSS */
- }
+.oxmod-headbar {
+  /* CSS */
+  height: 32px;
+  background-color: #fff;
+  line-height: 32px;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  padding: 0 10px;
+  font-weight: 700;
+  box-shadow: 0 1px 1px #ccc;
+}
+.oxmod-headbar .bt-back {
+  border: none;
+  background-color: transparent;
+  color: #126aff;
+  min-width: 30px;
+  font-size: 15px;
+  float: left;
+  height: 30px;
+  margin: 1px;
+  line-height: 30px;
+  padding: 0;
+  padding-left: 15px;
+}
+.oxmod-headbar .bt-back:before {
+  content: '';
+  margin-left: -12px;
+  margin-top: 2px;
+  font-weight: 700;
+  border: solid 2px #126aff;
+  border-bottom: none;
+  border-right: none;
+  width: 7px;
+  height: 7px;
+  float: left;
+  font-size: 0;
+  transform: rotate(-45deg);
+}
+.oxmod-headbar .pageinfo {
+  display: none;
+  position: absolute;
+  width: 140px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-left: -140px;
+  margin-top: 26px;
+  background-color: #fff;
+  z-index: 3;
+  border: solid 1px #ccc;
+  color: #666;
+}
+.oxmod-headbar .pageinfo em {
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  font-style: normal;
+  text-align: left;
+}
+.oxmod-headbar .pageinfo:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 136px;
+  top: -6px;
+  border: solid 1px #ccc;
+  transform: rotate(45deg);
+  border-right: none;
+  border-bottom: none;
+}
+.oxmod-headbar .bt-info {
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  float: right;
+  border-radius: 50%;
+  border: solid 1px #126aff;
+  font-style: italic;
+  font-weight: 700;
+  font-family: serif;
+  font-size: 14px;
+  color: #126aff;
+  margin-top: 7px;
+}
+.oxmod-headbar .bt-info:focus .pageinfo {
+  display: inline-block;
+}
