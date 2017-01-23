@@ -1,17 +1,23 @@
 @textColor:#126aff;
 .oxmod-headbar{
 /* CSS */
-  height:32px;
+  height:34px;
   background-color: #fff;
-  line-height: 32px;
+  line-height: 34px;
   text-align: center;
   color:#333;
   font-size:16px;
   padding:0 10px;
   font-weight: 700;
   box-shadow: 0 1px 1px #ccc;
+  user-select: none;
+  -webkit-tap-highlight-color:transparent;
+  button{
+    padding:0;
+    border:none;
+  }
   .bt-back{
-    border: none;
+
     background-color: transparent;
     color:@textColor;
     min-width: 30px;
@@ -35,13 +41,13 @@
       border-bottom: none;
       border-right:none;
 
-      width:7px;
-      height: 7px;
+      width:9px;
+      height: 9px;
 
       float: left;
       font-size:0;
 
-      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
     }
   }
   .pageinfo{
@@ -79,11 +85,9 @@
     }
   }
   .bt-info{
-
-    border: none;
     background-color: transparent;
-    width:20px;
-    height:20px;
+    width:24px;
+    height:24px;
     float: right;
     border-radius: 50%;
     border:solid 1px @textColor;
@@ -92,9 +96,9 @@
     font-family: serif;
     font-size:14px;
     color:@textColor;
-    margin-top:7px;
+    margin-top:5px;
     //box-shadow:  1px 1px 1px #eee;
-    &:focus{
+    &:focus,&:hover{
       .pageinfo{
         display: inline-block;
       }
