@@ -1,6 +1,10 @@
 {
   "name": "headbar",
   "version": "1.0.0",
-  "apiDependencies": null
+  "apiDependencies": [
+  	{
+  		"name":"ui-entry"
+  	}
+  ]
 }
 

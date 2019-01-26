@@ -4,15 +4,25 @@
         <!-- className 'J_OXMod' required  -->
 
         <div class="J_OXMod oxmod-headbar" ox-mod="headbar">
-            <button class="bt-info">
-                <span class="pageinfo">
-                    <em>owner: <xsl:value-of select="p/owner"/></em>
-                    <em style="color:#999;"><xsl:value-of select="p/desc"/></em>
-                </span>
-                i
-            </button>
-            <button class="bt-back"></button>
-            <xsl:value-of select="p/title"/>
+            <nav>
+                <div class="menu">
+                    <button class="icon-menu skin-color">&#xe600;</button><br/>
+                    <ul class="list">
+                        <xsl:for-each select="data/ui-entry/i[position() &gt; 1]">
+                            <li>
+                                <a href="{href}"><xsl:value-of select="title"/></a>
+                            </li>
+                        </xsl:for-each>
+                    </ul>
+                </div>
+                <a href="{data/ui-entry/i[1]/href}">
+                    <xsl:if test="data/ui-entry/i[1]/icon">
+                        <img src="{data/ui-entry/i[1]/icon}"/>
+                    </xsl:if>
+                    <sub><xsl:value-of select="data/ui-entry/i[1]/title"/></sub>
+                </a>
+
+            </nav>
         </div>
     </xsl:template>
 
