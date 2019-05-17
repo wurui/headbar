@@ -1,10 +1,8 @@
 {
-  "name": "headbar",
-  "version": "1.0.0",
-  "apiDependencies": [
-  	{
-  		"name":"ui-entry"
-  	}
-  ]
+	"RULE_VERSION":"20190428",
+	"name": "headbar",
+	"apiDependencies": [
+		{"name":"the-site"}
+	]
 }
 

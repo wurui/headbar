@@ -8,18 +8,18 @@
                 <div class="menu">
                     <button class="icon-menu skin-color">&#xe600;</button><br/>
                     <ul class="list">
-                        <xsl:for-each select="data/ui-entry/i[position() &gt; 1]">
+                        <xsl:for-each select="data/the-site/channels/i">
                             <li>
                                 <a href="{href}"><xsl:value-of select="title"/></a>
                             </li>
                         </xsl:for-each>
                     </ul>
                 </div>
-                <a href="{data/ui-entry/i[1]/href}">
-                    <xsl:if test="data/ui-entry/i[1]/icon">
-                        <img src="{data/ui-entry/i[1]/icon}"/>
+                <a href="{data/the-site/href}">
+                    <xsl:if test="data/the-site/logo and data/the-site/logo != ''">
+                        <img src="{data/the-site/logo}"/>
                     </xsl:if>
-                    <sub><xsl:value-of select="data/ui-entry/i[1]/title"/></sub>
+                    <sub><xsl:value-of select="data/the-site/title"/></sub>
                 </a>
 
             </nav>
